@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Ejecutar Script Actual",
+      "program": "${file}",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Crear Cuentas",
+      "program": "${workspaceFolder}/scripts/1_crearCuentas.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Emitir Token",
+      "program": "${workspaceFolder}/scripts/2_emitirToken.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Enviar a Usuario",
+      "program": "${workspaceFolder}/scripts/3_enviarAUsuario.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}

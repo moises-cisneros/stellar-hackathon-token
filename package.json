@@ -1,0 +1,27 @@
+{
+  "name": "warupay-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "create-accounts": "node scripts/1_crearCuentas.js",
+    "emit-tokens": "node scripts/2_emitirToken.js", 
+    "send-to-user": "node scripts/3_enviarAUsuario.js",
+    "serve": "firebase emulators:start",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["stellar", "blockchain", "stablecoin", "firebase", "hackathon"],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "Backend for WaruPay - BOB Stablecoin with Firebase Cloud Functions",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^13.3.0",
+    "dotenv": "^17.2.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.0.0"
+  }
+}
